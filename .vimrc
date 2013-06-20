@@ -27,6 +27,7 @@ map <C-k> 3k
 map j gj
 map k gk
 
+let mapleader = ","
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q<cr>
