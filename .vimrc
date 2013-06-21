@@ -22,12 +22,11 @@ set nobackup
 set nowb
 set noswapfile
 
-map <C-j> 3j
-map <C-k> 3k
+map <C-j> 4j
+map <C-k> 4k
 map j gj
 map k gk
 
-let mapleader = ","
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q<cr>
