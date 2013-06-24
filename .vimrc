@@ -22,6 +22,10 @@ set nobackup
 set nowb
 set noswapfile
 
+set statusline=%{strftime('%H:%M:%S',getftime(expand('%')))}\ %F
+set laststatus=2
+
+map <F2> :NERDTree<cr>
 map <C-j> 4j
 map <C-k> 4k
 map j gj
