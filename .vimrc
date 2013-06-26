@@ -25,12 +25,12 @@ set noswapfile
 set statusline=%{strftime('%H:%M:%S',getftime(expand('%')))}\ %F
 set laststatus=2
 
-map <F2> :NERDTree<cr>
-map <C-j> 4j
-map <C-k> 4k
+map <C-j> 5j
+map <C-k> 5k
 map j gj
 map k gk
 
+nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q<cr>
