@@ -1,7 +1,5 @@
-# main()
 snippet main
-	int main(int argc, const char *argv[])
-	{
+	int main(int argc, const char *argv[]) {
 		${1}
 		return 0;
 	}
@@ -45,9 +43,6 @@ snippet el
 	else {
 		${1}
 	}
-# Tertiary conditional
-snippet t
-	${1:/* condition */} ? ${2:a} : ${3:b}
 # Do While Loop
 snippet do
 	do {
@@ -61,10 +56,8 @@ snippet wh
 snippet fo
 	for (${1}) {
 	}
-# Custom For Loop
-snippet forr
-	for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
-		${5:/* code */}
+snippet ra
+	range (${1}) {
 	}
 # Function
 snippet fun
@@ -103,5 +96,3 @@ snippet fpr
 	fprintf(${1:stderr}, "${2:%s}\n"${3});${4}
 snippet .
 	[${1}]${2}
-snippet un
-	unsigned
