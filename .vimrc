@@ -5,7 +5,6 @@ syntax on
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-
 set textwidth=100
 set wrap
 set number
@@ -17,11 +16,10 @@ set cindent
 set noru
 set smarttab
 set lazyredraw
-
+set backspace=indent,eol,start
 set nobackup
 set nowb
 set noswapfile
-
 set statusline=%{strftime('%H:%M:%S',getftime(expand('%')))}\ %F
 set laststatus=2
 
@@ -29,7 +27,6 @@ map <C-j> 5j
 map <C-k> 5k
 map j gj
 map k gk
-
 nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
