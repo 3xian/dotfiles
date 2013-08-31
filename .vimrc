@@ -1,6 +1,7 @@
 filetype plugin on
 filetype indent on
-syntax on
+syntax enable
+set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
@@ -21,10 +22,12 @@ set nowb
 set noswapfile
 set statusline=[%{strftime('%H:%M:%S',getftime(expand('%')))}]\ %F
 set laststatus=2
-map <C-j> 5j
-map <C-k> 5k
+set pastetoggle=<C-p>
+set showmode
 map j gj
 map k gk
+map <C-j> 5j
+map <C-k> 5k
 nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
