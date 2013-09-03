@@ -15,3 +15,4 @@ endf
 inoremap ( <c-r>=AutoPair('(', ')')<CR>
 inoremap [ <c-r>=AutoPair('[', ']')<CR>
 inoremap { <c-r>=AutoPair('{', '}')<CR>
+inoremap ' ''<ESC>i
