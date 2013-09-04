@@ -24,6 +24,10 @@ set statusline=[%{strftime('%H:%M:%S',getftime(expand('%')))}]\ %F
 set laststatus=2
 set pastetoggle=<C-p>
 set showmode
+set undodir=~/.vim/.undo
+set undofile
+set undolevels=1000
+set undoreload=10000
 map j gj
 map k gk
 map <C-j> 5j
