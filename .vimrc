@@ -28,6 +28,7 @@ set undodir=~/.vim/.undo
 set undofile
 set undolevels=1000
 set undoreload=10000
+set fdm=marker
 map j gj
 map k gk
 map <C-j> 5j
