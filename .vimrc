@@ -46,7 +46,6 @@ nmap <leader>x :x<cr>
 nmap <leader>q :q<cr>
 nmap <leader>p :set paste<cr>i
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-execute pathogen#infect()
 
 
 " Disable AutoComplPop.
