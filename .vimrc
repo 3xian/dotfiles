@@ -1,11 +1,10 @@
-filetype plugin on
-filetype indent on
 syntax enable
+filetype plugin indent on
 set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-set textwidth=100
+set textwidth=0
 set wrap
 set number
 set fileencodings=utf-8,GBK,big5,gb2312,cp936,gb18030
@@ -39,6 +38,7 @@ nmap <leader>x :x<cr>
 nmap <leader>q :q<cr>
 nmap <leader>p :set paste<cr>i
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+execute pathogen#infect()
 
 
 " Disable AutoComplPop.
