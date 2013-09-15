@@ -1,5 +1,14 @@
-syntax enable
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
+Bundle 'Shougo/neocomplcache.vim'
 filetype plugin indent on
+
+syntax enable
 set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4
@@ -10,7 +19,6 @@ set number
 set fileencodings=utf-8,GBK,big5,gb2312,cp936,gb18030
 set hlsearch
 set incsearch
-set nocompatible
 set cindent
 set noru
 set smarttab
