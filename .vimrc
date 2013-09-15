@@ -4,7 +4,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
-Bundle 'ervandew/supertab'
 Bundle 'Shougo/neocomplcache.vim'
 filetype plugin indent on
 
