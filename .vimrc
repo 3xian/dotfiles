@@ -5,6 +5,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache.vim'
+Bundle 'digitaltoad/vim-jade'
 filetype plugin indent on
 
 syntax enable
