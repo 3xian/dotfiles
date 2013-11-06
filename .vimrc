@@ -3,16 +3,17 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+Bundle 'ervandew/supertab'
+Bundle '3xian/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Shougo/neocomplcache.vim'
 Bundle 'digitaltoad/vim-jade'
 filetype plugin indent on
-
 syntax enable
+set et
 set ffs=unix,dos,mac
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set textwidth=0
 set wrap
 set number
@@ -38,11 +39,10 @@ set undoreload=10000
 set fdm=marker
 map j gj
 map k gk
-map <C-j> 5j
-map <C-k> 5k
+map <C-j> 8j
+map <C-k> 8k
 nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q!<cr>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-source ~/.vim/plugin/neocomplcache-conf.vim
