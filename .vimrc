@@ -29,6 +29,7 @@ set backspace=indent,eol,start
 set nobackup
 set nowb
 set noswapfile
+set noek
 set statusline=[%{strftime('%H:%M:%S',getftime(expand('%')))}]\ %F
 set laststatus=2
 set pastetoggle=<F2>
