@@ -18,7 +18,7 @@ function! AutoPair(open, close)
   endif
 endf
 
-function ClosePair(char)
+function! ClosePair(char)
   if getline('.')[col('.') - 1] == a:char
     return "\<Right>"
   else
