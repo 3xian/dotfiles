@@ -1,6 +1,14 @@
-setl shiftwidth=4
 setl dictionary-=~/.vim/dict/python.dict dictionary+=~/.vim/dict/python.dict
 setl complete-=k complete+=k
+
+inoremap , ,
+inoremap ' ''<ESC>i
+inoremap ( <c-r>=AutoPair('(', ')')<CR>
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap { <c-r>=AutoPair('{', '}')<CR>
+inoremap } <c-r>=ClosePair('}')<CR>
+inoremap [ <c-r>=AutoPair('[', ']')<CR>
+inoremap ] <c-r>=ClosePair(']')<CR>
 
 function! AutoPair(open, close)
   let line = getline('.')
@@ -11,7 +19,10 @@ function! AutoPair(open, close)
   endif
 endf
 
-inoremap ( <c-r>=AutoPair('(', ')')<CR>
-inoremap [ <c-r>=AutoPair('[', ']')<CR>
-inoremap { <c-r>=AutoPair('{', '}')<CR>
-inoremap ' ''<ESC>i
+function! ClosePair(char)
+  if getline('.')[col('.') - 1] == a:char
+    return "\<Right>"
+  else
+    return a:char
+  endif
+endf
