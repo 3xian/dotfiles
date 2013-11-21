@@ -31,7 +31,7 @@ set nowb
 set noswapfile
 set statusline=[%{strftime('%H:%M:%S',getftime(expand('%')))}]\ %F
 set laststatus=2
-set pastetoggle=<F2>
+set pastetoggle=<C-p>
 set showmode
 set fdm=marker
 map j gj
