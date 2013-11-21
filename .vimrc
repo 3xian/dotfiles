@@ -12,9 +12,9 @@ filetype plugin indent on
 syntax enable
 set et
 set ffs=unix,dos,mac
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set textwidth=0
 set wrap
 set number
@@ -29,15 +29,10 @@ set backspace=indent,eol,start
 set nobackup
 set nowb
 set noswapfile
-set noek
 set statusline=[%{strftime('%H:%M:%S',getftime(expand('%')))}]\ %F
 set laststatus=2
 set pastetoggle=<F2>
 set showmode
-set undodir=~/.vim/.undo
-set undofile
-set undolevels=1000
-set undoreload=10000
 set fdm=marker
 map j gj
 map k gk
