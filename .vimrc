@@ -8,6 +8,7 @@ Bundle 'ervandew/supertab'
 Bundle '3xian/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'jnwhiteh/vim-golang'
 filetype plugin indent on
 syntax enable
 set et
