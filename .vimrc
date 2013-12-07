@@ -46,6 +46,6 @@ nmap <leader>q :q!<cr>
 inoremap <C-j> ()<ESC>i
 inoremap <C-k> []<ESC>i
 inoremap <C-l> {<CR>}<ESC>O
-inoremap <C-n> ''<ESC>i
-inoremap <C-m> ""<ESC>i
+inoremap <C-h> ''<ESC>i
+inoremap <C-n> ""<ESC>i
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
