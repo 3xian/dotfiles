@@ -11,7 +11,6 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'jnwhiteh/vim-golang'
 filetype plugin indent on
 syntax enable
-set et
 set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4
