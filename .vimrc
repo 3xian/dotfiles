@@ -3,7 +3,6 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
 Bundle 'ervandew/supertab'
 Bundle '3xian/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
@@ -48,3 +47,4 @@ inoremap <C-l> {<CR>}<ESC>O
 inoremap <C-h> ''<ESC>i
 inoremap <C-n> ""<ESC>i
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+hi MatchParen ctermfg=red ctermbg=black guifg=red guibg=black
