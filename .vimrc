@@ -13,6 +13,7 @@ Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 syntax enable
+
 set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4
@@ -36,6 +37,7 @@ set laststatus=2
 set pastetoggle=<C-p>
 set showmode
 set fdm=marker
+
 map j gj
 map k gk
 map <C-j> 8j
@@ -49,5 +51,8 @@ inoremap <C-k> []<ESC>i
 inoremap <C-l> {<CR>}<ESC>O
 inoremap <C-h> ''<ESC>i
 inoremap <C-n> ""<ESC>i
+
+au FileType go autocmd BufWritePre <buffer> Fmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
 hi MatchParen ctermfg=red ctermbg=gray guifg=red guibg=black
