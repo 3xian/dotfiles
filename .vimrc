@@ -3,11 +3,14 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
 Bundle 'ervandew/supertab'
 Bundle '3xian/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
-Bundle '3xian/vim-golang'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'scrooloose/syntastic'
+
 filetype plugin indent on
 syntax enable
 set ffs=unix,dos,mac
