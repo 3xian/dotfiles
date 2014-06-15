@@ -10,6 +10,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'scrooloose/syntastic'
+Bundle 'yosssi/gold'
 
 filetype plugin indent on
 syntax enable
