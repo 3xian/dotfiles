@@ -1,1 +1,1 @@
-nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
+nnoremap <Leader>f :w <BAR> !lessc % > %:t:r.css<CR><space>
