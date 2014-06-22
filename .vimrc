@@ -59,6 +59,6 @@ inoremap <C-l> <ESC>l%%a
 au FileType go autocmd BufWritePre <buffer> Fmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-hi MatchParen ctermfg=red ctermbg=gray guifg=red guibg=black
+hi MatchParen ctermfg=Cyan ctermbg=DarkGray
 
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
