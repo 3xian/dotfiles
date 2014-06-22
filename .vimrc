@@ -49,11 +49,12 @@ nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q!<cr>
+
 inoremap <C-j> ()<ESC>i
 inoremap <C-k> []<ESC>i
-inoremap <C-l> {<CR>}<ESC>O
-inoremap <C-h> ''<ESC>i
-inoremap <C-n> ""<ESC>i
+inoremap <C-u> ""<ESC>i
+inoremap <C-n> ''<ESC>i
+inoremap <C-l> <ESC>l%%a
 
 au FileType go autocmd BufWritePre <buffer> Fmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
