@@ -23,12 +23,12 @@ set tabstop=4
 set softtabstop=4
 set textwidth=0
 set wrap
-set number
+set nu
 set fileencodings=utf-8,GBK,big5,gb2312,cp936,gb18030
 set hlsearch
 set incsearch
 set cindent
-set no
+set noru
 set smarttab
 set lazyredraw
 set backspace=indent,eol,start
