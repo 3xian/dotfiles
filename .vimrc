@@ -28,7 +28,7 @@ set fileencodings=utf-8,GBK,big5,gb2312,cp936,gb18030
 set hlsearch
 set incsearch
 set cindent
-set noru
+set no
 set smarttab
 set lazyredraw
 set backspace=indent,eol,start
