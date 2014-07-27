@@ -18,9 +18,10 @@ filetype plugin indent on
 syntax enable
 
 set ffs=unix,dos,mac
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set et
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set textwidth=0
 set wrap
 set nu
