@@ -12,7 +12,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'scrooloose/syntastic'
 Bundle 'yosssi/vim-gold'
 Bundle 'pangloss/vim-javascript'
-Bundle 'groenewege/vim-less'
+Bundle 'davidhalter/jedi-vim'
 
 filetype plugin indent on
 syntax enable
