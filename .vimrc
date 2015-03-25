@@ -65,4 +65,4 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 hi MatchParen ctermfg=Cyan ctermbg=DarkGray
 
 let g:syntastic_cpp_compiler_options="-std=c++0x"
-let g:syntastic_python_pylint_args="-d C0111,R0903"
+let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
