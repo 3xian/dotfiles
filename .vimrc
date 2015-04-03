@@ -17,7 +17,6 @@ Bundle 'hynek/vim-python-pep8-indent'
 
 filetype plugin indent on
 syntax enable
-
 set ffs=unix,dos,mac
 set et
 set shiftwidth=2
@@ -43,7 +42,10 @@ set laststatus=2
 set pastetoggle=<C-p>
 set showmode
 set fdm=marker
+au FileType go autocmd BufWritePre <buffer> Fmt
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" general keymap
 map j gj
 map k gk
 map <C-j> 8j
@@ -52,7 +54,6 @@ nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <leader>q :q!<cr>
-
 inoremap <C-j> ()<ESC>i
 inoremap <C-k> []<ESC>i
 inoremap <C-n> {<CR>}<ESC>O
@@ -60,10 +61,8 @@ inoremap <C-d> ""<ESC>i
 inoremap <C-f> ''<ESC>i
 inoremap <C-l> <ESC>l%%a
 
-au FileType go autocmd BufWritePre <buffer> Fmt
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-hi MatchParen ctermfg=Cyan ctermbg=DarkGray
-
-let g:syntastic_cpp_compiler_options="-std=c++0x"
+" config [scrooloose/syntastic]
+let g:syntastic_mode_map = {'mode': 'passive'}
+let g:syntastic_cpp_compiler_options = '-std=c++0x'
 let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
+nmap <leader>s :SyntasticCheck<cr>
