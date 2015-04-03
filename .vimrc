@@ -13,6 +13,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'yosssi/vim-gold'
 Bundle 'pangloss/vim-javascript'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'hynek/vim-python-pep8-indent'
 
 filetype plugin indent on
 syntax enable
