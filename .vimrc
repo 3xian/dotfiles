@@ -64,5 +64,5 @@ inoremap <C-l> <ESC>l%%a
 " config [scrooloose/syntastic]
 let g:syntastic_mode_map = {'mode': 'passive'}
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
-let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
+let g:syntastic_python_pylint_args="-d C0103,C0111,C1001,R0903,W0141,W0232"
 nmap <leader>s :SyntasticCheck<cr>
