@@ -41,7 +41,7 @@ set laststatus=2
 set pastetoggle=<C-p>
 set showmode
 set fdm=marker
-au FileType go autocmd BufWritePre <buffer> Fmt
+au FileType go autocmd BufWritePre <buffer> GoFmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " general keymap
