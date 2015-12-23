@@ -7,12 +7,10 @@ call vundle#rc()
 Bundle 'ervandew/supertab'
 Bundle '3xian/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'fatih/vim-go'
 Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'davidhalter/jedi-vim'
-Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on
 syntax enable
