@@ -11,7 +11,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'fatih/vim-go'
-Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Yggdroot/indentLine'
 
 filetype plugin indent on
 syntax enable
@@ -64,3 +64,7 @@ let g:syntastic_mode_map = {'mode': 'passive'}
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
 let g:syntastic_python_pylint_args="-d C0103,C0111,C1001,R0903,W0141,W0232"
 nmap <leader>s :SyntasticCheck<cr>
+
+" config [Yggdroot/indentLine]
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 239
