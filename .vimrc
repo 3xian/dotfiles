@@ -11,6 +11,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'fatih/vim-go'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
 syntax enable
