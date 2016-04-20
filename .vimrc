@@ -1,19 +1,22 @@
 set shell=/bin/bash
+
+" Config 'VundleVim/Vundle.vim'
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'ervandew/supertab'
-Bundle '3xian/snipmate.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'pangloss/vim-javascript'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'fatih/vim-go'
-Bundle 'Yggdroot/indentLine'
-
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'ervandew/supertab'
+Plugin '3xian/snipmate.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'pangloss/vim-javascript'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'fatih/vim-go'
+call vundle#end()
 filetype plugin indent on
+
+" Basic config
 syntax enable
 set ffs=unix,dos,mac
 set et
@@ -43,7 +46,7 @@ set fdm=marker
 au FileType go autocmd BufWritePre <buffer> GoFmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" general keymap
+" Key maps
 map j gj
 map k gk
 map <C-j> 8j
@@ -59,12 +62,14 @@ inoremap <C-d> ""<ESC>i
 inoremap <C-f> ''<ESC>i
 inoremap <C-l> <ESC>l%%a
 
-" config [scrooloose/syntastic]
-let g:syntastic_mode_map = {'mode': 'passive'}
+" Config 'scrooloose/syntastic'
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
-let g:syntastic_python_pylint_args="-d C0103,C0111,C1001,R0903,W0141,W0232"
-nmap <leader>s :SyntasticCheck<cr>
+let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
 
-" config [Yggdroot/indentLine]
-let g:indentLine_char = '┆'
-let g:indentLine_color_term = 239
+" Config 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
