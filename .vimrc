@@ -11,7 +11,6 @@ Plugin '3xian/snipmate.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
@@ -67,6 +66,7 @@ let g:syntastic_cpp_compiler_options = '-std=c++0x'
 let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
 
 " Config 'nathanaelkane/vim-indent-guides'
+colorscheme default
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 1
