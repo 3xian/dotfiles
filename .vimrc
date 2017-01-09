@@ -42,7 +42,7 @@ set laststatus=2
 set pastetoggle=<C-p>
 set showmode
 set fdm=marker
-set cinoptions+=g1,h2
+set cinoptions+=g2,h2
 au FileType go autocmd BufWritePre <buffer> GoFmt
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
