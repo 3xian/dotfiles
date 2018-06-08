@@ -54,7 +54,7 @@ map <C-k> 8k
 nmap <leader>t :NERDTree<cr>
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
-nmap <leader>q :q!<cr>
+nmap q :q!<cr>
 inoremap <C-j> ()<ESC>i
 inoremap <C-k> []<ESC>i
 inoremap <C-n> {<CR>}<ESC>O
